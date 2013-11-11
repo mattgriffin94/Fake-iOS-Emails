@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="From Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BY-QZ-Yuk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="IYm-fC-RYL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C6D-uJ-O7U">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Ba-mQ-OYA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="Fbz-jD-yvJ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="From Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWY-TJ-Trt">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yw9-6F-Fw1">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="rpu-gN-dwI"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="To Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4q-Xp-2Uv">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aR9-km-y5B">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="PMg-4n-LqL"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Subject:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioc-MN-XLp">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Body:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlO-mA-NpL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k62-4x-hrx">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="6SA-ji-7qb"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjM-I7-O7W">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="221" id="a15-s0-q1g"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="5uK-l8-Mb9"/>
+                                </connections>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LeE-7Z-tuV">
+                                <items>
+                                    <barButtonItem title="Send" id="VHY-hZ-fxx">
+                                        <connections>
+                                            <action selector="send" destination="2" id="fQj-2V-R7Q"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="AFH-gX-c5y"/>
+                                    <barButtonItem title="Done" id="ezd-gj-Zke">
+                                        <connections>
+                                            <action selector="done" destination="2" id="C0m-DN-Z7G"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yw9-6F-Fw1" firstAttribute="leading" secondItem="C6D-uJ-O7U" secondAttribute="leading" type="default" id="2in-10-Pz2"/>
+                            <constraint firstItem="jjM-I7-O7W" firstAttribute="top" secondItem="hlO-mA-NpL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3gI-Dq-bVn"/>
+                            <constraint firstAttribute="trailing" secondItem="C6D-uJ-O7U" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4y1-Gh-U7x"/>
+                            <constraint firstItem="F4q-Xp-2Uv" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="52M-EW-pIG"/>
+                            <constraint firstItem="aR9-km-y5B" firstAttribute="leading" secondItem="yw9-6F-Fw1" secondAttribute="leading" type="default" id="6DP-h0-4ij"/>
+                            <constraint firstItem="0BY-QZ-Yuk" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7wR-5e-6me"/>
+                            <constraint firstAttribute="trailing" secondItem="aR9-km-y5B" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8la-oU-jTw"/>
+                            <constraint firstItem="C6D-uJ-O7U" firstAttribute="top" secondItem="3" secondAttribute="top" constant="63" id="Cyb-Om-IWV"/>
+                            <constraint firstItem="k62-4x-hrx" firstAttribute="top" secondItem="aR9-km-y5B" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ek0-OK-Ycu"/>
+                            <constraint firstItem="LeE-7Z-tuV" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Ih6-l5-BcP"/>
+                            <constraint firstItem="Ioc-MN-XLp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Lef-YF-XAA"/>
+                            <constraint firstItem="yw9-6F-Fw1" firstAttribute="top" secondItem="C6D-uJ-O7U" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="P2J-jR-csM"/>
+                            <constraint firstItem="jjM-I7-O7W" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Pyg-oT-pQr"/>
+                            <constraint firstItem="C6D-uJ-O7U" firstAttribute="baseline" secondItem="0BY-QZ-Yuk" secondAttribute="baseline" type="default" id="RRh-qp-PDI"/>
+                            <constraint firstItem="LeE-7Z-tuV" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="SH6-yR-Tdd"/>
+                            <constraint firstItem="0BY-QZ-Yuk" firstAttribute="top" secondItem="3" secondAttribute="top" constant="67" id="eCP-gC-gE1"/>
+                            <constraint firstItem="jjM-I7-O7W" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="fMi-hV-u37"/>
+                            <constraint firstItem="LeE-7Z-tuV" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="gHB-Pz-bMv"/>
+                            <constraint firstItem="C6D-uJ-O7U" firstAttribute="leading" secondItem="0BY-QZ-Yuk" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="hBj-ML-WZf"/>
+                            <constraint firstItem="mWY-TJ-Trt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="105" id="iNu-Qn-3vS"/>
+                            <constraint firstItem="aR9-km-y5B" firstAttribute="top" secondItem="yw9-6F-Fw1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jW0-Mb-oVh"/>
+                            <constraint firstItem="k62-4x-hrx" firstAttribute="leading" secondItem="aR9-km-y5B" secondAttribute="leading" type="default" id="jwK-J1-5YF"/>
+                            <constraint firstItem="hlO-mA-NpL" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kFm-v2-SDY"/>
+                            <constraint firstItem="hlO-mA-NpL" firstAttribute="top" secondItem="Ioc-MN-XLp" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lOA-69-abO"/>
+                            <constraint firstItem="jjM-I7-O7W" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="mZy-S4-Bdp"/>
+                            <constraint firstAttribute="trailing" secondItem="yw9-6F-Fw1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="nUb-sq-ypV"/>
+                            <constraint firstItem="F4q-Xp-2Uv" firstAttribute="top" secondItem="3" secondAttribute="top" constant="143" id="sSR-xd-WBF"/>
+                            <constraint firstAttribute="trailing" secondItem="k62-4x-hrx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ydM-IB-NDP"/>
+                            <constraint firstItem="mWY-TJ-Trt" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zfJ-oe-l1E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="body" destination="jjM-I7-O7W" id="dwf-0N-UmJ"/>
+                        <outlet property="fromEmail" destination="yw9-6F-Fw1" id="qx5-Mp-WQZ"/>
+                        <outlet property="fromName" destination="C6D-uJ-O7U" id="2fk-jS-RyB"/>
+                        <outlet property="subject" destination="k62-4x-hrx" id="8O5-UA-S6H"/>
+                        <outlet property="toEmail" destination="aR9-km-y5B" id="EnI-co-NiX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="body" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="fromEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="fromName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="subject" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="toEmail" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
